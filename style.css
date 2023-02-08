@@ -1,89 +1,86 @@
-body{
-    padding: 0;
-    margin: 0;
-    font-family: sans-serif;
-    background-color: rgb(255, 255, 132);
-    color: gray;
+body {
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+  background-color: rgb(255, 255, 132);
+  color: gray;
 }
 
-img{
-    display: block;
-    width: 100%;
-    border-radius: 0.5rem;
-    object-fit: cover;
-    height: 30rem;
-    margin-bottom: 2rem;
+img {
+  display: block;
+  width: 100%;
+  border-radius: 0.5rem;
+  object-fit: cover;
+  height: 30rem;
+  margin-bottom: 2rem;
 }
 
-.section-center{
-    width: 90vw ;
-    margin: 0 auto;
-    max-width: 1170px;
-    min-width: 340px;
-    padding: 5rem 0; 
+.section-center {
+  width: 90vw;
+  margin: 0 auto;
+  max-width: 1170px;
+  min-width: 340px;
+  padding: 5rem 0;
 }
 
-.tabs{
-    background-color: #fcffe2;
-    border-radius: 0.5rem;
-    grid-template-rows: auto 1fr;
+.tabs {
+  background-color: #fcffe2;
+  border-radius: 0.5rem;
+  grid-template-rows: auto 1fr;
 }
 
-
-.button{
-    padding: 1rem 0;
-    border: none;
-    font-size: 1rem;
-    background: #a4cbfa;
-    cursor: pointer;
-    transition: all .3s linear;
-    letter-spacing: .25rem;
+.button {
+  padding: 1rem 0;
+  border: none;
+  font-size: 1rem;
+  background: #a4cbfa;
+  cursor: pointer;
+  transition: all 0.3s linear;
+  letter-spacing: 0.25rem;
 }
 
-.btn-containen{
+.btn-containen {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.button:nth-child(1) {
+  border-top-left-radius: 0.5rem;
+}
+
+.button:nth-child(3) {
+  border-top-left-radius: 0.5rem;
+}
+
+.button:hover:not(.live) {
+  background-color: #e93b81;
+  color: white;
+}
+
+.tabs-content {
+  padding: 2rem 1.5rem;
+}
+
+@media (min-width: 992px) {
+  .image {
+    margin-bottom: 0;
+  }
+
+  .section-center {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2rem;
+  }
 }
 
-.button:nth-child(1){
-    border-top-left-radius: 0.5rem;
+.content {
+  display: none;
 }
 
-.button:nth-child(3){
-    border-top-left-radius: 0.5rem;
+.content.live {
+  display: block;
 }
 
-.button:hover:not(.live){
-    background-color: #e93b81;
-    color: white;
-}
-
-.tabs-content{
-    padding: 2rem 1.5rem;
-}
-
-
-@media(min-width:992px){
-    .image{
-        margin-bottom: 0;
-    }
-
-    .section-center{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        column-gap: 2rem;
-    }
-}
-
-
-.content{
-    display: none;
-}
-
-.content.live{
-    display: block;
-}
-
-.button.live{
-    background-color: #fcffe2;
+.button.live {
+  background-color: #fcffe2;
 }
