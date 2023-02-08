@@ -10,17 +10,17 @@
   <body>
     <div class="section-center">
       <div class="image">
-        <img src="./halloween.jpg" alt="" />
+        <img src="./halloween.jpg" alt="image" />
       </div>
       <div class="tabs">
         <div class="btn-containen">
-          <button class="button live">Step 1</button>
-          <button class="button">Step 2</button>
-          <button class="button">Step 3</button>
+          <button class="button live" data-id="step1">Step 1</button>
+          <button class="button" data-id="step2">Step 2</button>
+          <button class="button" data-id="step3">Step 3</button>
         </div>
 
         <div class="tabs-content">
-          <div class="content">
+          <div class="content live" id="step1">
             <h1>Step 1</h1>
             <p>
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime corporis magnam repudiandae, cum molestiae quisquam quos doloribus rem
@@ -31,7 +31,7 @@
               mollitia, dolorum tempora iusto consectetur libero. Consectetur, adipisci expedita.
             </p>
           </div>
-          <div class="content live">
+          <div class="content" id="step2">
             <h1>Step 2</h1>
             <p>
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime corporis magnam repudiandae, cum molestiae quisquam quos doloribus rem
@@ -42,7 +42,7 @@
               mollitia, dolorum tempora iusto consectetur libero. Consectetur, adipisci expedita.
             </p>
           </div>
-          <div class="content">
+          <div class="content" id="step3">
             <h1>Step 3</h1>
             <p>
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime corporis magnam repudiandae, cum molestiae quisquam quos doloribus rem
